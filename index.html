@@ -1,0 +1,602 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Socar</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: #232323;
+            width: 100%;
+            height: 90px;
+        }
+
+        h1 {
+            margin-left: 60px;
+            text-align: center;
+            color: white;
+            line-height: 90px;
+            float: left;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 500;
+            color: white;
+            cursor: pointer
+        }
+
+        .lahiye {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 600;
+            color: white;
+            cursor: pointer
+        }
+
+        .fealiyyet {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 700;
+            color: white;
+            cursor: pointer
+        }
+
+        .dayaniqliliq {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 800;
+            color: white;
+            cursor: pointer
+        }
+
+        .Media {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 900;
+            color: white;
+
+        }
+
+        .Karyera {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 1000;
+            color: white;
+            cursor: pointer
+        }
+
+        .Əlaqə {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 1100;
+            color: white;
+            cursor: pointer
+        }
+
+        .Az {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 1450;
+            color: white;
+            cursor: pointer
+        }
+
+        .En {
+            text-decoration: none;
+            line-height: 90px;
+            position: absolute;
+            left: 1480;
+            color: white;
+            cursor: pointer
+        }
+
+        .logo {
+            width: 40px;
+            position: absolute;
+            left: 0;
+            margin: 25px;
+
+        }
+
+        .sekil1 {
+            background: url(./img/C7452T01.webp) center / cover;
+            width: 50%;
+            height: 88%;
+            position: relative;
+            float: left;
+        }
+
+        .sekiller {
+            width: 100%;
+            h850px
+        }
+
+        .box1 {
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            right: 50px;
+            top: 350px;
+            color: black;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+
+        h2::after {
+            background-color: black;
+            height: 2px;
+            width: 500px;
+            transition: 4s;
+            scale: 1;
+            display: block;
+            content: '';
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .box2 {
+            position: absolute;
+            left: 120px;
+            top: 600px;
+            color: white;
+        }
+
+        .box2:before {
+            background-color: white;
+            height: 8px;
+            width: 300px;
+            content: '';
+            display: block;
+            margin: 5px;
+        }
+
+        .box3 {
+            position: absolute;
+            left: 450px;
+            top: 600px;
+            color: white;
+        }
+
+        .box3::before {
+            content: '';
+            display: block;
+            width: 300px;
+            height: 2px;
+            background-color: white;
+            margin: 5px;
+            transition: 0.5s;
+        }
+
+        .box3:hover::before {
+            height: 8px;
+
+        }
+
+        .box4 {
+            position: absolute;
+            top: 600px;
+            left: 850px;
+            color: black;
+        }
+
+        .box4:before {
+            content: '';
+            display: block;
+            width: 300px;
+            height: 2px;
+            background-color: black;
+            transition: 0.5s;
+        }
+
+        .box4:hover::before {
+            height: 8px;
+        }
+
+        .box5 {
+            position: absolute;
+            top: 600px;
+            left: 1190px;
+        }
+
+        .box5::before {
+            content: '';
+            display: block;
+            transition: 0.5s;
+            background-color: black;
+            height: 2px;
+            width: 300px;
+        }
+
+        .box5:hover::before {
+            height: 8px;
+        }
+
+        .box1alt {
+            margin: 15px;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            color: skyblue;
+            background-color: white;
+            border: solid skyblue;
+        }
+
+        .button {
+            left: 990px;
+            position: absolute;
+            top: 510px;
+        }
+
+        button:hover {
+            background-color: rgb(28, 171, 228);
+            color: white;
+        }
+
+        .box6 {
+            color: darkblue;
+            position: absolute;
+            left: 120px;
+            top: 850px;
+        }
+
+        .box6::after {
+            content: '';
+            display: block;
+            background-color: black;
+            height: 1px;
+            width: 1200px;
+            margin: 7px;
+        }
+
+        span {
+            position: absolute;
+            top: 900px;
+            left: 120px;
+            font-size: 50px;
+        }
+
+        .sekil2 {
+            background: url(./img/kesfiyyat.jpg) center / cover;
+            width: 40%;
+            height: 320px;
+            position: absolute;
+            top: 1000px;
+            left: 120px;
+            float: left;
+            transition: 0.5s;
+        }
+
+        .sekil2:hover {
+            scale: 1.03;
+            box-shadow: 0 0 30px;
+            border-radius: 10px;
+        }
+
+        .sekil3 {
+            background: url(./img/neql.jpg) center/cover;
+            width: 40%;
+            height: 320px;
+            position: absolute;
+            top: 1000px;
+            left: 760px;
+            float: left;
+            transition: 0.5s;
+        }
+
+        .sekil3:hover {
+            scale: 1.03;
+            box-shadow: 0 0 30px;
+            border-radius: 10px;
+        }
+
+        .sekil4 {
+            background: url(./img/emalkimya.jpg) center / cover;
+            width: 40%;
+            height: 320px;
+            position: absolute;
+            top: 1350px;
+            left: 120px;
+            transition: 0.5s;
+        }
+
+        .sekil4:hover {
+            scale: 1.03;
+            box-shadow: 0 0 30px;
+            border-radius: 10px;
+        }
+
+        .sekil5 {
+            background: url(./img/marketingsatis.jpg) center /cover;
+            width: 40%;
+            height: 320px;
+            position: absolute;
+            top: 1350px;
+            left: 760px;
+            transition: 0.5s;
+        }
+        .sekil5:hover {
+            scale: 1.03;
+            box-shadow: 0 0 30px;
+            border-radius: 10px;
+        }
+
+        .sekil2yazi {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 20px;
+        }
+
+        .sekil3yazi {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 20px;
+        }
+
+        .sekil4yazi {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 20px;
+        }
+
+        .sekil5yazi {
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 20px;
+        }
+
+        .box7 {
+            width: 25%;
+            height: 20%;
+            background-color: white;
+            position: absolute;
+            top: 1850px;
+            left: 120px;
+        }
+
+        .box8 {
+            width: 25%;
+            height: 20%;
+            background-color: white;
+            position: absolute;
+            top: 1850px;
+            left: 540px;
+        }
+
+        .box9 {
+            width: 25%;
+            height: 20%;
+            background-color: white;
+            position: absolute;
+            top: 1850px;
+            left: 960px;
+        }
+        .img1{
+            background: url(./img/Baba.png)center / cover;
+            width: 170px;
+            height: 150px;
+            cursor: pointer;
+        }
+        .img2{
+            background: url(./img/prezident.jpg) center / cover;
+            width: 170px;
+            height: 150px;
+            cursor: pointer;
+        }
+        .img3{
+            background: url(./img/Mehriban.jpg) center / cover;
+            width: 160px;
+            height: 150px;
+            cursor: pointer;
+        }
+        .baba{
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50px;
+            left: 190px;
+        }
+        .lider{
+            color: rgb(67, 67, 184);
+            position: absolute;
+            top: 90px;
+            left: 190px;
+        }
+        .ilham{
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50px;
+            left: 190px;
+        }
+        .lider2{
+            color: rgb(67, 67, 184);
+            position: absolute;
+            top: 90px;
+            left: 190px;
+        }
+        .xanim{
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50px;
+            left: 190px;
+        }
+        .vitse{
+            color: rgb(67, 67, 184);
+            position: absolute;
+            top: 90px;
+            left: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+            <h1>Socar</h1>
+            <a href="https://socar.az/az/page/haqqimizda">Haqqimizda</a>
+            <a href="https://socar.az/az/page/layiheler" class="lahiye">Layiheler</a>
+            <a href="https://socar.az/az/page/fealiyyet" class="fealiyyet">Fəaliyyət</a>
+            <a href="https://socar.az/az/page/dayaniqliliq" class="dayaniqliliq">Dayanıqlılıq</a>
+            <a href="https://socar.az/az/page/media" class="Media">Media</a>
+            <a href="https://socar.jobs/az/page/karyera" class="Karyera">Karyera</a>
+            <a href="https://socar.az/az/page/elaqe-2" class="Əlaqə">Əlaqə</a>
+            <a href="" class="Az">Az |</a>
+            <a href="" class="En">En</a>
+            <img src="./img/log.png" alt="" class="logo">
+        </header>
+
+    </div>
+    <div class="sekiller">
+        <div class="sekil1"></div>
+    </div>
+    <div class="box1">
+        <p>
+        <h2>
+            SOCAR Özbəkistanda təşkil olunan “İqtisadiyyatın əsas istiqamətləri – <br>
+            ümumi rifaha doğru addım” adlı sərgidə
+            öz stendi ilə təmsil olunur
+        </h2>
+        </p>
+        <p class="box1alt">
+            23 avqust 2024
+        </p>
+    </div>
+    <a href="button.html" class="button">
+        <button>Daha Etrafli</button>
+    </a>
+    <div class="box2">
+        <p>
+
+            SOCAR Özbəkistanda
+            təşkil olunan <br>
+            “İqtisadiyyatın əsas istiqamətləri - <br>
+            ümumi rifaha doğru addım” adlı...
+
+
+        </p>
+    </div>
+    <div class="box3">
+        <p>
+
+            Heydər Əliyev adına NEZ-in <br>
+            Mərkəzi Laboratoriyası beynəlxalq <br>
+            TÜRKAK/MRA akkreditasiyasını...
+
+        </p>
+    </div>
+    <div class="box4">
+        <p>
+
+            "Talassemiyasız həyat naminə" <br>
+            proqramı çərçivəsində SOCAR-da <br>
+            növbəti qanvermə aksiyası keçirilib
+
+        </p>
+    </div>
+    <div class="box5">
+        <p>
+
+            SOCAR-ın 2024-cü ilin 2-ci rübünə <br>
+            dair qazma, hasilat, emal və ixrac <br>
+            göstəriciləri
+
+        </p>
+    </div>
+    <div class="box6">
+        <p>
+
+            Sərmayələrimizi şaxələndiririk
+        </p>
+    </div>
+    <span>Fəaliyyət</span>
+    <div class="sekil2">
+        <div class="sekil2yazi">
+            Kəşfiyyat/Hasilat
+        </div>
+    </div>
+    <div class="sekil3">
+        <div class="sekil3yazi">Nəql</div>
+    </div>
+    <div class="sekil4">
+        <div class="sekil4yazi">Emal-Kimya Senayesi</div>
+    </div>
+    <div class="sekil5">
+        <div class="sekil5yazi">Marketing ve Satis</div>
+    </div>
+        <div class="box7">
+            <div class="img1">
+              <p class="baba">
+                Heyder Eliyev
+              </p>
+              <p class="lider">
+                Umummilli Lider
+              </p>
+            </div>
+        </div>
+        <div class="box8">
+            <div class="img2">
+                <p class="ilham">
+                    İlham Əliyev
+                </p>
+                <p class="lider2">
+                    Prezident
+
+                </p>
+            </div>
+        </div>
+        <div class="box9">
+            <div class="img3">
+                <P class="xanim">
+                    Mehriban Əliyeva
+                </P>
+                <p class="vitse">
+                    Birinci Vitse-prezident
+                </p>
+            </div>
+        </div>
+        
+
+</body>
+
+</html>
